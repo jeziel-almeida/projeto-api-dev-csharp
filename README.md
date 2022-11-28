@@ -15,7 +15,7 @@
 
 **Clonar o repositório**
 ```
-git clone https://github.com/jeziel-almeida/gabarito-api-dev-csharp.git
+git clone https://github.com/jeziel-almeida/projeto-api-dev-csharp.git
 ```
 
 **Restaurar os pacotes**
