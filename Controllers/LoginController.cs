@@ -27,5 +27,35 @@ namespace VoeAirlines.Controllers
         {
             return Ok(_loginService.ListarLogin());
         }
+        
+        [HttpGet("{id}")]
+        public IActionResult ListarLoginPeloId(int id)
+        {
+            var login = _loginService.ListarLoginPeloId(id);
+            if(login == null) {
+                return NotFound("Login não encontrado!");
+            }
+            return Ok(login);
+        }
+        
+        [HttpDelete("{id}")]
+        public IActionResult DeletarLogin(int id)
+        {
+            var sucesso = _loginService.DeletarLogin(id);
+            if(!sucesso) {
+                return NotFound("Login não encontrado!");
+            }
+            return Ok("Deletado com sucesso!");
+        }
+        
+        [HttpPut("{id}")]
+        public IActionResult AtualizarLogin(int id, AdicionarLoginViewModel dados)
+        {
+            var login = _loginService.AtualizarLogin(id, dados);
+            if(login == null) {
+                return NotFound("Login não encontrado!");
+            }
+            return Ok(login);
+        }
     }
 }
