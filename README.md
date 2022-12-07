@@ -1,6 +1,6 @@
 # Projeto ASP.NET Core
 
-![Série](https://img.shields.io/badge/Jeziel%20Almeida-AluraTube-blue)
+![Série](https://img.shields.io/badge/Jeziel%20Almeida-WebAPI-blue)
 
 <h3 align="center">
 🚀 Tecnologias utilizadas
